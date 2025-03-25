@@ -1,0 +1,2 @@
+# requirements.txt
+streamlit-server-state==0.18.2
