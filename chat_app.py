@@ -60,7 +60,7 @@ class WebSocketServer:
         asyncio.set_event_loop(self.loop)
 
         async def server_main():
-            async with websockets.serve(self.handler, "0.0.0.0", 8765):
+            async with websockets.serve(self.handler, "127.0.0.1", 8765):
                 await asyncio.Future()  # 永久运行
 
         self.thread = threading.Thread(
