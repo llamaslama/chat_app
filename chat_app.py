@@ -205,7 +205,7 @@ class WSController {
 
     initWebsocket() {
         console.log('🏁 Starting to initialize WebSocket');
-        this.ws = new WebSocket('ws://1234567890.streamlit.app:8765');
+        this.ws = new WebSocket('wss://1234567890.streamlit.app:8765');
 
         this.ws.onopen = () => console.log('✅ WebSocket connection successful');
         
