@@ -6,5 +6,5 @@
 *  docker exec -ti {CONTAINER ID} bash  && rm /etc/nginx/conf.d/default.conf
 *  docker restart {CONTAINER ID}
 
-#### start streamlit
+## start streamlit
 nohup streamlit run chat_app.py --server.port 8501 --server.address 0.0.0.0 > streamlit.log 2>&1 &
